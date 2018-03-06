@@ -7,25 +7,25 @@
         <property name="port" value="1010"/>
     </bean>
 
-    <bean name="Tea" class="com.spring.demo.Tea"/>
+    <!--<bean name="Tea" class="com.spring.demo.Tea"/>-->
 
-    <bean id = "hotDrink"  class="com.spring.demo.Tea"/>
+    <!--<bean id = "hotDrink"  class="com.spring.demo.Tea"/>-->
 
     <bean name="ExpressTea" class="com.spring.demo.ExpressTea"/>
 
-    <bean name="RestaurantQ6a" class="com.spring.demo.Restaurant" autowire="byName"/>
-    <!--<bean name="RestaurantQ6a" class="com.spring.demo.Restaurant" autowire="byType"/>-->
+    <!--<bean name="RestaurantQ6a" class="com.spring.demo.Restaurant" autowire="byName"/>-->
+    <bean name="RestaurantQ6a" class="com.spring.demo.Restaurant" autowire="byType"/>
     <!--<bean name="RestaurantQ6a" class="com.spring.demo.Restaurant" autowire="constructor"/>-->
 
-    <bean name="TeaRestaurant" class="com.spring.demo.Restaurant">
-        <property name="hotDrink" ref="Tea"/>
-    </bean>
+    <!--<bean name="TeaRestaurant" class="com.spring.demo.Restaurant">-->
+        <!--<property name="hotDrink" ref="Tea"/>-->
+    <!--</bean>-->
 
-        <bean name="expressTeaRestaurant" class="com.spring.demo.Restaurant">
-        <property name="hotDrink">
-            <bean class="com.spring.demo.ExpressTea"/>
-        </property>
-    </bean>
+        <!--<bean name="expressTeaRestaurant" class="com.spring.demo.Restaurant">-->
+        <!--<property name="hotDrink">-->
+            <!--<bean class="com.spring.demo.ExpressTea"/>-->
+        <!--</property>-->
+    <!--</bean>-->
 
     <bean name="complexBean" class="com.spring.demo.Complex">
         <property name="list">

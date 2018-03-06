@@ -20,7 +20,7 @@ public class Application {
 //        System.out.println (complex );                                     //Q5
 
         Restaurant rs=context.getBean ( "RestaurantQ6a",Restaurant.class );
-        rs.getHotDrink ().prepareHotDrink ();                             //Q6 byname
+        rs.getHotDrink ().prepareHotDrink ();                             //Q6 bytype
 
     }
 }
