@@ -19,8 +19,10 @@ public class Application {
 //        Complex complex=context.getBean ( Complex.class );
 //        System.out.println (complex );                                     //Q5
 
-        Restaurant rs=context.getBean ( "RestaurantQ6a",Restaurant.class );
-        rs.getHotDrink ().prepareHotDrink ();                             //Q6 bytype
+        Restaurant rs= (Restaurant) context.getBean ( "RestaurantQ6a",Restaurant.class );
+
+
+        rs.hotDrink.prepareHotDrink (); //Q6 by constructor
 
     }
 }
