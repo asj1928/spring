@@ -2,5 +2,8 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-
+    <bean name="database" class="com.spring.demo.Database">
+        <property name="name" value="data1"/>
+        <property name="port" value="1010"/>
+    </bean>
 </beans>
