@@ -7,10 +7,14 @@ public class Application {
     public static void main ( String[] args ) {
         ApplicationContext context=new ClassPathXmlApplicationContext (" config.xml" ) ;
 //        Database database=context.getBean ( Database.class );
-//
+//                                                                          Q1
 //        System.out.println (database );
 
-        Restaurant  restaurant=context.getBean ( "TeaRestaurant",Restaurant.class );
-        restaurant.getHotDrink ().prepareHotDrink ();
+        Restaurant  teaRestaurant=context.getBean ( "TeaRestaurant",Restaurant.class );
+        teaRestaurant.getHotDrink ().prepareHotDrink ();                    //Q3
+
+        Restaurant expressTeaRestaurant=context.getBean ( "expressTeaRestaurant",Restaurant.class );
+        expressTeaRestaurant.getHotDrink ().prepareHotDrink ();             //Q4
+
     }
 }
