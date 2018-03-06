@@ -6,8 +6,11 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Application {
     public static void main ( String[] args ) {
         ApplicationContext context=new ClassPathXmlApplicationContext (" config.xml" ) ;
-        Database database=context.getBean ( Database.class );
+//        Database database=context.getBean ( Database.class );
+//
+//        System.out.println (database );
 
-        System.out.println (database );
+        Restaurant  restaurant=context.getBean ( "TeaRestaurant",Restaurant.class );
+        restaurant.getHotDrink ().prepareHotDrink ();
     }
 }

@@ -6,4 +6,12 @@
         <property name="name" value="data1"/>
         <property name="port" value="1010"/>
     </bean>
+    <bean name="Tea" class="com.spring.demo.Tea"/>
+    <bean name="ExpressTea" class="com.spring.demo.ExpressTea"/>
+    <bean name="TeaRestaurant" class="com.spring.demo.Restaurant">
+        <property name="hotDrink" ref="Tea"/>
+
+    </bean>
+
+
 </beans>
