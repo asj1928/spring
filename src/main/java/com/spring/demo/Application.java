@@ -16,5 +16,7 @@ public class Application {
         Restaurant expressTeaRestaurant=context.getBean ( "expressTeaRestaurant",Restaurant.class );
         expressTeaRestaurant.getHotDrink ().prepareHotDrink ();             //Q4
 
+        Complex complex=context.getBean ( Complex.class );
+        System.out.println (complex );                                     //Q5
     }
 }
