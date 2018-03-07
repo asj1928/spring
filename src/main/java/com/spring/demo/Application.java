@@ -12,7 +12,7 @@ public class Application {
 //
 //        Restaurant  teaRestaurant=context.getBean ( "TeaRestaurant",Restaurant.class );
 //        teaRestaurant.getHotDrink ().prepareHotDrink ();                    //Q3
-        Restaurant  Restaurant=context.getBean ( "Restaurant",Restaurant.class );
+        Restaurant  Restaurant=context.getBean ( Restaurant.class );
         Restaurant.hotDrink.prepareHotDrink ();                             //Q9 @autowired by constructor
 //
     //        boolean  teaRestaurant=context.isPrototype ( "TeaRestaurant");

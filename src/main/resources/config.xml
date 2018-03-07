@@ -8,6 +8,7 @@
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <context:annotation-config/>
+    <context:component-scan base-package="com.spring.demo"/>
     <!-- bean definitions go here -->
 
 
@@ -22,8 +23,8 @@
     </bean>
 
 
-    <bean name="Tea" class="com.spring.demo.Tea"/>
-    <bean name="Restaurant" class="com.spring.demo.Restaurant"/>
+    <!--<bean name="Tea" class="com.spring.demo.Tea"/>-->
+    <!--<bean name="Restaurant" class="com.spring.demo.Restaurant"/>-->
 
     <!--<bean name="ExpressTea" class="com.spring.demo.ExpressTea"/>-->
 
