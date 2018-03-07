@@ -6,15 +6,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Application {
     public static void main ( String[] args ) {
         ApplicationContext context=new ClassPathXmlApplicationContext (" config.xml" ) ;
-////        Database database=context.getBean ( Database.class );
-////                                                                          Q1
-////        System.out.println (database );
+        Database database=context.getBean ( Database.class );
+                                                                          //Q1 && Q8(check config.xml
+        System.out.println (database );
 //
 //        Restaurant  teaRestaurant=context.getBean ( "TeaRestaurant",Restaurant.class );
 //        teaRestaurant.getHotDrink ().prepareHotDrink ();                    //Q3
 //
-        boolean  teaRestaurant=context.isPrototype ( "TeaRestaurant");
-        System.out.println ("TeaRestaurant isPrototype :"+teaRestaurant );    //Q7
+    //        boolean  teaRestaurant=context.isPrototype ( "TeaRestaurant");
+    //        System.out.println ("TeaRestaurant isPrototype :"+teaRestaurant );    //Q7
 
 ////        Restaurant expressTeaRestaurant=context.getBean ( "expressTeaRestaurant",Restaurant.class );
 ////        expressTeaRestaurant.getHotDrink ().prepareHotDrink ();             //Q4

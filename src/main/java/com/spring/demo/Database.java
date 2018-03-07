@@ -1,5 +1,7 @@
 package com.spring.demo;
 
+import org.springframework.beans.factory.annotation.Required;
+
 public class Database {
     private String name;
     private Integer port;
@@ -16,6 +18,7 @@ public class Database {
         return name;
     }
 
+    @Required
     public void setName ( String name ) {
         this.name = name;
     }
