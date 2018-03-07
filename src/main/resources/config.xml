@@ -11,12 +11,19 @@
     <!-- bean definitions go here -->
 
 
+    <!--<bean name="database" class="com.spring.demo.Database">-->
+      <!--<property name="name" value="data1"/>          &lt;!&ndash; Q8 try without setting name just comment this line &ndash;&gt;-->
+        <!--<property name="port" value="1010"/>-->
+    <!--</bean>-->
+
     <bean name="database" class="com.spring.demo.Database">
-      <property name="name" value="data1"/>          <!-- Q8 try without setting name just comment this line -->
+        <property name="name" value="data1"/>
         <property name="port" value="1010"/>
     </bean>
 
-    <!--<bean name="Tea" class="com.spring.demo.Tea"/>-->
+
+    <bean name="Tea" class="com.spring.demo.Tea"/>
+    <bean name="Restaurant" class="com.spring.demo.Restaurant"/>
 
     <!--<bean name="ExpressTea" class="com.spring.demo.ExpressTea"/>-->
 

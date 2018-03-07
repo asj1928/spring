@@ -1,5 +1,6 @@
 package com.spring.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Required;
 
 public class Database {
@@ -18,7 +19,8 @@ public class Database {
         return name;
     }
 
-    @Required
+
+    @Autowired
     public void setName ( String name ) {
         this.name = name;
     }

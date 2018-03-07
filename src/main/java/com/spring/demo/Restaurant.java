@@ -1,5 +1,6 @@
 package com.spring.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Required;
 
 public class Restaurant {
@@ -10,6 +11,7 @@ public class Restaurant {
     }
 
 
+    @Autowired
     public void setHotDrink ( HotDrink hotDrink ) {
         this.hotDrink = hotDrink;
     }
