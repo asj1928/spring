@@ -6,15 +6,20 @@ import org.springframework.beans.factory.annotation.Required;
 public class Restaurant {
     HotDrink hotDrink;
 
-    public HotDrink getHotDrink ( ) {
-        return hotDrink;
-    }
-
 
     @Autowired
-    public void setHotDrink ( HotDrink hotDrink ) {
+    public Restaurant ( HotDrink hotDrink ) {
         this.hotDrink = hotDrink;
     }
+    //    public HotDrink getHotDrink ( ) {
+//        return hotDrink;
+//    }
+//
+//
+//    @Autowired
+//    public void setHotDrink ( HotDrink hotDrink ) {
+//        this.hotDrink = hotDrink;
+//    }
 
     @Override
     public String toString ( ) {
