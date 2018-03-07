@@ -13,16 +13,18 @@ public class Application {
 //        Restaurant  teaRestaurant=context.getBean ( "TeaRestaurant",Restaurant.class );
 //        teaRestaurant.getHotDrink ().prepareHotDrink ();                    //Q3
 //
+        boolean  teaRestaurant=context.isPrototype ( "TeaRestaurant");
+        System.out.println ("TeaRestaurant isPrototype :"+teaRestaurant );    //Q7
+
 ////        Restaurant expressTeaRestaurant=context.getBean ( "expressTeaRestaurant",Restaurant.class );
 ////        expressTeaRestaurant.getHotDrink ().prepareHotDrink ();             //Q4
 //
 //        Complex complex=context.getBean ( Complex.class );
 //        System.out.println (complex );                                     //Q5
 
-        Restaurant rs= (Restaurant) context.getBean ( "RestaurantQ6a",Restaurant.class );
-
-
-        rs.hotDrink.prepareHotDrink (); //Q6 by constructor
+//        Restaurant rs= (Restaurant) context.getBean ( "RestaurantQ6a",Restaurant.class );
+//
+//       rs.hotDrink.prepareHotDrink ();                                    //Q6 by constructor
 
     }
 }
